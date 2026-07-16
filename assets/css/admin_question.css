@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial;
+}
+.main-content {
+  margin-left: 260px;
+  padding: 20px;
+}
+.form-box,
+.table-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px #ccc;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+button {
+  background: #1e3a8a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}

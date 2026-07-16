@@ -1,0 +1,46 @@
+body {
+  background: url(../image/admin-bg.jpeg);
+  background-size: cover;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+}
+.login-box {
+  background: rgba(255,255,255,0.9);
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+h1{
+  color: white;
+}
+
+.textBox, .passBox{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+input{
+   padding: 8px 4rem;
+  padding-left: 4px;
+    border-radius: 8px;
+    border: 1px solid rgb(86, 141, 241);
+}
+.submitBtn{
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: none;
+  background: darkolivegreen;
+  color: white;
+}

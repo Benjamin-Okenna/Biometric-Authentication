@@ -1,0 +1,66 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('../image/espoly.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header{
+  text-align: center;
+  font-size: 2em;
+  color: brown;
+}
+form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputContainer{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  row-gap: 1rem;
+  text-align: left;
+  
+}
+.boxInput input{
+  padding: 8px 5rem;
+  padding-left: 4px;
+  border: none;
+  border-radius: 8px;
+  
+}
+.boxInput{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.submitBtn{
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(75, 75, 240);
+  
+}
+.selectBtn{
+  text-align: center;
+}
+a{
+   padding: 8px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(163, 151, 40);
+  text-decoration: none;
+  text-align: center;
+}

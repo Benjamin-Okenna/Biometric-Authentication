@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+}
+.main-content {
+  margin-left: 260px;
+  padding: 20px;
+}
+.form-box,
+.table-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+button {
+  background: #1e3a8a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  background: #1e3a8a;
+  color: white;
+  padding: 10px;
+}
