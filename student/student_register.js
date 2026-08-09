@@ -3,6 +3,7 @@ const canvas = document.getElementById('canvas');
 const captureBtn = document.getElementById('captureBtn');
 const retakeBtn = document.getElementById('retakeBtn');
 const webcam_input = document.getElementById('webcam_image');
+const password = document.getElementById('password');
 let stream = null; // to store stream so we can stop it
 
 // 1. Turn on webcam
@@ -46,3 +47,11 @@ retakeBtn.addEventListener('click', () => {
     retakeBtn.style.display = 'none';
   });
 });
+
+function togglePassword(){
+  if (password.type === "password") {
+    password.type = "text";
+  }else {
+    password.type = "password";
+  }
+}

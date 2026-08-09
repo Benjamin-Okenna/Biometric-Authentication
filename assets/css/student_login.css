@@ -39,9 +39,17 @@ form{
   
 }
 .boxInput{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: left;
+}
+.fa-solid{
+  position: absolute;
+  right: 8px;
+  top: 31px;
+  font-size: 12px;
+  
 }
 
 .submitBtn{

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Login</title>
   <link rel="stylesheet" href="../assets/css/student_login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     .alert-error { padding: 10px; margin-bottom: 15px; background: #ffdddd; color: #d8000c; border: 1px solid #d8000c; border-radius: 5px; text-align: center; }
   </style>
@@ -35,6 +36,10 @@
   <div class="boxInput">
     <label for="password">Password</label>
     <input type="password" id="password" name="password" required> <!-- added name -->
+    <span onclick="togglePassword()">
+       <i class="fa-solid fa-eye"></i>
+    </span>
+   
   </div>
 
   <div class="boxInput">
@@ -45,5 +50,7 @@
   
  </div>
   </form>
+
+  <script src="student_login.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration</title>
   <link rel="stylesheet" href="../assets/css/student_register.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     .camera-frame { width: 320px; height: 240px; border: 3px solid #4facfe; border-radius: 10px; background: #000; position: relative; overflow: hidden; }
     #video, #canvas { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; }
@@ -30,7 +31,9 @@
 <form action="register_process.php" method="POST" enctype="multipart/form-data">
   <div class="inputContainer">
     <div class="boxInput">
-      <h2>Student Enrollment</h2>
+      
+      <div class="textInput">
+        <h2>Student Enrollment</h2>
 
       <!-- ONLY SHOW ERROR HERE -->
       <?php 
@@ -40,23 +43,40 @@
       }
       // REMOVED THE SUCCESS BLOCK FROM HERE
       ?>
-
-      <label for="name">Full Name</label>
+        <div>
+        <label for="name">Full Name</label>
       <input type="text" id="name" name="fullname" required value="<?php echo $_SESSION['old']['fullname'] ?? ''; ?>">
-
-      <label for="matric">Matric</label>
+      </div>
+      
+      <div>
+        <label for="matric">Matric</label>
       <input type="text" id="matric" name="matric" required value="<?php echo $_SESSION['old']['matric'] ?? ''; ?>">
-
-      <label for="email">Email</label>
+      </div>
+      
+      <div>
+        <label for="email">Email</label>
       <input type="email" id="email" name="email" required value="<?php echo $_SESSION['old']['email'] ?? ''; ?>">
 
-      <label for="password">Password</label>
+      </div>
+      
+      <div class="boxPass">
+        <label for="password">Password</label>
       <input type="password" id="password" name="password" required>
-      <button type="submit">Register</button>
-
-      <a class="returnBtn" href="student_login.php">Back</a>
+      <span onclick="togglePassword()">
+       <i class="fa-solid fa-eye"></i>
+    </span>
+      </div>
+      
+      <div>
+        <button type="submit">Register</button>
+        <a class="returnBtn" href="student_login.php">Back</a>
+      </div>
+    
+      
       </div>
 
+      </div>
+      
       <div class="captureBox">
         <label>Capture Face</label>
         <div class="camera-frame">
